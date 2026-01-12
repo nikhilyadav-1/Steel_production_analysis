@@ -1,21 +1,41 @@
 steel_production_analysis/
 │
-├── data/
-│   └── steel_production_data.csv
+├── src/
+│   ├── notebooks/
+│   │   ├── exploratory_analysis.ipynb
+│   │   └── model_experiments.ipynb
+│   │
+│   └── scripts/
+│       ├── 01_data_loading.py
+│       ├── 02_data_preprocessing.py
+│       ├── 03_eda.py
+│       ├── 04_model_training.py
+│       └── 05_results_analysis.py
 │
-├── scripts/
-│   ├── 01_data_loading.py
-│   ├── 02_data_preprocessing.py
-│   ├── 03_eda.py
-│   ├── 04_model_training.py
-│   └── 05_results_analysis.py
+├── data/
+│   ├── raw/
+│   │   └── steel_production_data.csv
+│   │
+│   └── processed/
+│       ├── train_data.csv
+│       ├── validation_data.csv
+│       └── test_data.csv
 │
 ├── results/
-│   ├── performance_metrics.csv
-│   └── model_predictions/
+│   ├── figures/
+│   │   ├── eda_plots/
+│   │   └── model_comparisons/
+│   │
+│   └── tables/
+│       └── performance_metrics.csv
 │
-├── figures/
-│   └── generated plots (EDA & model results)
+├── docs/
+│   ├── report.pdf
+│   └── presentation.pptx
 │
-├── README.md
-└── P1-doc.pdf
+├── tests/
+│   └── test_preprocessing.py
+│
+├── .gitignore
+├── LICENSE
+└── README.md
